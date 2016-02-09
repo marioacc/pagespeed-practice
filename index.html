@@ -3,6 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PageSpeed Practice</title>
+<FilesMatch "\.(html|htm|php|js|xml|txt|css)$">
+Header set Cache-Control "max-age=604800, public, must-revalidate"
+</FilesMatch>
 <META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 2017 1:00:00 GMT">
 </head>
 <body>
